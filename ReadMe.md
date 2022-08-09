@@ -10,5 +10,6 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 |----------|----------|
 | [Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps. |
 |[Get-AppCenterOrganizations](/Get-AppCenterOrganizations.psm1) |Retrieves list of App Center Organazations.
-## To-Do
-We need to determine which platform we're running on. If Mac/Linux, we'll need to change details which support those platforms. Currently (8/9/2022) we only support the Windows Platform. However, there's nothing to prevent us from supporting any Platform PowerShell is supported.
+
+## Roadmap
+We need to determine which platform we're running on. If Mac/Linux, we'll need to change details which support those platforms. Currently (8/9/2022) we only support the Windows Platform. However, there's nothing to prevent us from supporting any Platform PowerShell is supported. ``` Contributions are welcomed. ```
