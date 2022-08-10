@@ -15,7 +15,7 @@ Try running the following commands to get started with the AppCenter PS Modules 
 ``` $orgs = Get-AppCenterOrgs ```
 
 ### Populate Your Apps
-``` $apps = $orgs | ForEach-Object { Get-AppCenterApps -OrgName $_.name } ``~
+``` $apps = $orgs | ForEach-Object { Get-AppCenterApps -OrgName $_.name } ```
 
 ### Get Status of All Export Services
 1. Populate a list of Apps with one ore more export services enabled
