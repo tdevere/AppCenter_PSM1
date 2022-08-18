@@ -47,17 +47,19 @@ Try running the following commands to get started with the AppCenter PS Modules 
 
 3. Check the results of removal export operation
 
-    To Do: Implement Single App Check
-
-    ``` Get-AppCenterAppDetails -OrgName "" -AppName "" ```
+    ``` Get-AppCenterApp -OrgName "" -AppName "" ```
 
 
 ## PowerShell Module List
 | Function | Synopsis |
 |----------|----------|
-| [Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps. |
-|[Get-AppCenterOrganizations](/Get-AppCenterOrganizations.psm1) |Retrieves list of App Center Organazations.
-|[Get-AppCenterExportApps](/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights) |
+|[Get-AppCenterApp](/Get-AppCenterApp.psm1) | Return a specific app with the given app name which belongs to the given owner. |
+|[Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps for a specifc Organization. |
+|[Get-AppCenterApps](/Get-AppCenterApps.psm1) | Return all apps which belongs to the given owner. |
+|[Get-AppCenterExportApps](/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights). |
+|[Get-AppCenterOrgs](/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations.
+|[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
+
 
 
 ## Roadmap
