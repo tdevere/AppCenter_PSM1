@@ -57,8 +57,11 @@ Try running the following commands to get started with the AppCenter PS Modules 
 |[Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps for a specifc Organization. |
 |[Get-AppCenterApps](/Get-AppCenterApps.psm1) | Return all apps which belongs to the given owner. |
 |[Get-AppCenterExportApps](/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights). |
-|[Get-AppCenterOrgs](/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations.
+|[Get-AppCenterOrgs](/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
 |[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
+|[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
+|[Set-AzureDevOpsWebhook](/Set-AzureDevOpsWebhook.psm1) | Create a webhook for an Azure DevOps Project. |
+|[Get-AzureDevOpsProjects](/Get-AzureDevOpsProjects.psm1 | Returns the list of projects in your organization. |
 
 
 

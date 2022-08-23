@@ -26,7 +26,7 @@ $AzureDevOpsProjectId = $env:AzureDevOpsProjectId
 $AzureDevOpsWebHookReceiverUri = $env:AzureDevOpsWebHookReceiverUri
 
 
-function Create-AzureDevOpsWebhook 
+function Set-AzureDevOpsWebhook 
 {
     #https://docs.microsoft.com/en-us/rest/api/azure/devops/hooks/Subscriptions/Create?view=azure-devops-rest-6.0&tabs=HTTP
     param 
@@ -78,4 +78,4 @@ $WebHookConfiguration = @"
 }
 
 
-Export-ModuleMember -Function Create-AzureDevOpsWebhook
+Export-ModuleMember -Function Set-AzureDevOpsWebhook
