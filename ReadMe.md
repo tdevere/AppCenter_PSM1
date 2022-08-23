@@ -1,6 +1,4 @@
-[[_TOC_]]
-
-# PowerShell Script Module Library - AppCenter Administration Tools
+# PowerShell Script Module Library for AppCenter Administration
 
 ## Setup
 Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the PowerShell modules within this repository to the Powershell modules directory on your system. This makes running the commands natively to your PowerShell session simple and easy to use. 
