@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 # PowerShell Script Module Library - AppCenter Administration Tools
 
 ## Setup
@@ -8,8 +10,10 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 Remember to run setup each time you make updates to your local clone so that script changes are immediately available to you. 
 
 ## Getting Started
-
-Try running the following commands to get started with the AppCenter PS Modules for PowerShell
+<details>
+<summary>
+    Get started with the AppCenter PS Modules for PowerShell
+</summary>
 
 ### Populate Your Organizations
 ``` $orgs = Get-AppCenterOrgs ```
@@ -49,6 +53,7 @@ Try running the following commands to get started with the AppCenter PS Modules 
 
     ``` Get-AppCenterApp -OrgName "" -AppName "" ```
 
+</details>
 
 ## PowerShell Module List
 | Function | Synopsis |
@@ -61,7 +66,7 @@ Try running the following commands to get started with the AppCenter PS Modules 
 |[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Set-AzureDevOpsWebhook](/Set-AzureDevOpsWebhook.psm1) | Create a webhook for an Azure DevOps Project. |
-|[Get-AzureDevOpsProjects](/Get-AzureDevOpsProjects.psm1 | Returns the list of projects in your organization. |
+|[Get-AzureDevOpsProjects](/Get-AzureDevOpsProjects.psm1) | Returns the list of projects in your organization. |
 
 
 
