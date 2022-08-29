@@ -57,12 +57,13 @@ Remember to run setup each time you make updates to your local clone so that scr
 | Function | Synopsis |
 |----------|----------|
 |[Get-AppCenterApp](/Get-AppCenterApp.psm1) | Return a specific app with the given app name which belongs to the given owner. |
-|[Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps for a specifc Organization. |
 |[Get-AppCenterApps](/Get-AppCenterApps.psm1) | Return all apps which belongs to the given owner. |
+|[Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps for a specifc Organization. |
+|[Get-AppCenterAppsByOrgList](/Get-AppCenterAppsByOrg.psm1)| Same as [Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) however this takes a list of Orgs and returns a list.
 |[Get-AppCenterExportApps](/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights). |
+|[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Get-AppCenterOrgs](/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
-|[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
-|[Get-AppCenterOrg](/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
+|[Get-AppCenterDistributionStores](/Get-AppCenterDistributionStores.psm1) | Get Store information for App. |
 |[Set-AzureDevOpsWebhook](/Set-AzureDevOpsWebhook.psm1) | Create a webhook for an Azure DevOps Project. |
 |[Get-AzureDevOpsProjects](/Get-AzureDevOpsProjects.psm1) | Returns the list of projects in your organization. |
 
