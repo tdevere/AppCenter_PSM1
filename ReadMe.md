@@ -66,7 +66,8 @@ Remember to run setup each time you make updates to your local clone so that scr
 |[Get-AppCenterDistributionStores](/Get-AppCenterDistributionStores.psm1) | Get Store information for App. |
 |[Set-AzureDevOpsWebhook](/Set-AzureDevOpsWebhook.psm1) | Create a webhook for an Azure DevOps Project. |
 |[Get-AzureDevOpsProjects](/Get-AzureDevOpsProjects.psm1) | Returns the list of projects in your organization. |
-
+|[Write-ColorfulHost](/Write-ColorfulHost.psm1) | Print collections with mulitple colors |
+|[Get-GithubRepositoryPermissions](/Get-GithubRepositoryPermissions.psm1) | Check your repository access to GitHub using a PAT |
 
 
 ## Roadmap
