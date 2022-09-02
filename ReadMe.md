@@ -25,6 +25,8 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 
 ### Azure
 
+[Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
+
 | Function | Synopsis |
 |----------|----------|
 |[Get-AzureDevOpsProjects](/azureDevOps/Set-AzureDevOpsWebhook.psm1) | Return list of projects in Azure DevOps. |
@@ -32,11 +34,15 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 
 ### GitHub
 
+[Getting started documentation](/docs/Getting_Started_GitHub.md)
+
 | Function | Synopsis |
 |----------|----------|
 |[Get-GithubRepositoryPermissions](/general/Get-GithubRepositoryPermissions.psm1) | Check your repository access to GitHub using a PAT |
 
 ### General
+
+[Getting started documentation](/docs/Getting_Started_General.md)
 
 | Function | Synopsis |
 |----------|----------|
@@ -49,10 +55,10 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 
 ## Roadmap
 
-1. Support for Mac | Linux
+1. Needs support for Mac | Linux
 * We need to determine which platform we're running on. If Mac/Linux, we'll need to change details which support those platforms. Currently (8/9/2022) we only support the Windows Platform. However, there's nothing to prevent us from supporting any Platform PowerShell is supported. 
 
-2. Add List Paramater
-* It would be better if we can pass a list into many functions, rather than rely on ForEach-Object commands. This will just make the process of managing larger collections easier.
+2. Update all relevant methods to include colletions
+* It would be better if we can pass a list into many functions, rather than rely on ForEach-Object commands. 
 
-``` Contributions are welcomed. ```
+## Contributions are welcomed
