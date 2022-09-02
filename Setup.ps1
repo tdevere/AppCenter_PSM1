@@ -4,7 +4,7 @@
 
 $psModules = "$env:userprofile\Documents\WindowsPowerShell\Modules"
 $currentDirectory = [System.Environment]::CurrentDirectory
-$psm1List = Get-ChildItem -Path $currentDirectory -Filter *.psm1
+$psm1List = Get-ChildItem -Path $currentDirectory -Filter *.psm1 -Recurse
 
 foreach ($script in $psm1List)
 {    
