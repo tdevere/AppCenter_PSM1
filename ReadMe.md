@@ -86,7 +86,9 @@ Remember to run setup each time you make updates to your local clone so that scr
 |----------|----------|
 |[Get-UnixDateTimeSeconds](/Get-UnixDateTimeSeconds.psm1) | [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
 |[Get-UnixDateTimeMilliseconds](/Get-UnixDateTimeSeconds.psm1) | [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds() |
+|[Get-UnixStartOfDayDateTimeSeconds](/Get-UnixStartOfDayDateTimeSeconds.psm1) | Return Start of Day DateTime in Seconds
 |[Write-ColorfulHost](/Write-ColorfulHost.psm1) | Print collections with mulitple colors |
+<!-- |[PSM1-Registration.psm1](/PSM1-Registration.psm1) | Register or Unregister all PSM1 modules within a single directory. Also show list of currently instaled PSM1 modules. | -->
 
 
 ## Roadmap

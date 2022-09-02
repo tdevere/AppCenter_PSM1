@@ -22,4 +22,3 @@ foreach ($script in $psm1List)
     Write-Host "Result of Copy: $copyResult"
     Get-ChildItem -Path $dirCheckPath
 }
-
