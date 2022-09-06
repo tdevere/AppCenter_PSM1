@@ -21,7 +21,7 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 |[Get-AppCenterOrg](/appCenter/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Get-AppCenterOrgs](/appCenter/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
 |[Get-AppCenterDistributionStores](/appCenter/Get-AppCenterDistributionStores.psm1) | Get Store information for App. |
-|[Get-AzureDevOpsProjects](/appCenter/Get-AzureDevOpsProjects.psm1) | Returns the list of projects in your organization. |
+|[Get-AppCenterServiceConnections](/appCenter/Get-AppCenterServiceConnections.psm1) | Returns the list of store connections related to your App Center account. |
 
 ### Azure
 
