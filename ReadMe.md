@@ -38,7 +38,8 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 
 | Function | Synopsis |
 |----------|----------|
-|[Get-GithubRepositoryPermissions](/general/Get-GithubRepositoryPermissions.psm1) | Check your repository access to GitHub using a PAT |
+|[Get-GithubRepositoryPermissions](/github/Get-GithubRepositoryPermissions.psm1) | Check your repository access to GitHub using a PAT |
+|[Get-GithubUserRepositories](/github/Get-GithubUserRepositories.psm1) | Get list of your repositories using a PAT |
 
 ### General
 
