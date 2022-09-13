@@ -1,9 +1,10 @@
 # PowerShell Script Module Library for Azure DevOps and AppCenter Administration
 
-## Setup
-Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the PowerShell modules within this repository to the Powershell modules directory on your system. This makes running the commands natively to your PowerShell session simple and easy to use. 
+## Windows Setup
+Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules directory to "$env:userprofile\Documents\WindowsPowerShell\Modules". After restarting your Powershell session, these commands are natively loaded (Windows 10+). 
 
- ``` Remember to run setup each time you make updates to your local clone so that script changes are immediately available to you.  ```
+ ``` When you make changes to a script, you will need to rerun ``` [Setup Script](/Setup.ps1) 
+ ```and restart your PowerShell session to reflect updates.  ```
 
 ## PowerShell Module List 
 
