@@ -5,11 +5,9 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 
  ``` Remember to run setup each time you make updates to your local clone so that script changes are immediately available to you.  ```
 
-## PowerShell Module List
+## PowerShell Module List 
 
-### AppCenter
-
-[Getting started documentation](/docs/Gettings_Started_AppCenter_PSM1.md)
+### AppCenter [Getting started documentation](/docs/Gettings_Started_AppCenter_PSM1.md)
 
 | Function | Synopsis |
 |----------|----------|
@@ -22,28 +20,24 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 |[Get-AppCenterOrgs](/appCenter/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
 |[Get-AppCenterDistributionStores](/appCenter/Get-AppCenterDistributionStores.psm1) | Get Store information for App. |
 |[Get-AppCenterServiceConnections](/appCenter/Get-AppCenterServiceConnections.psm1) | Returns the list of store connections related to your App Center account. |
+|[Get-AppCenterRepoConfig](/appCenter/Get-AppCenterRepoConfig.psm1) | Returns the repository build configuration status of the app. |
+|[Get-AppCenterRepoConfigByList](/appCenter/Get-AppCenterRepoConfig.psm1) | Pass a list of owners and names, to process bulk repository build configuration status of the app. |
 
-### Azure
-
-[Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
+### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
 | Function | Synopsis |
 |----------|----------|
 |[Get-AzureDevOpsProjects](/azureDevOps/Set-AzureDevOpsWebhook.psm1) | Return list of projects in Azure DevOps. |
 |[Set-AzureDevOpsWebhook](/docs/Set-AzureDevOpsWebhook.md) | Create a webhook for an Azure DevOps Project. |
 
-### GitHub
-
-[Getting started documentation](/docs/Getting_Started_GitHub.md)
+### GitHub [Getting started documentation](/docs/Getting_Started_GitHub.md)
 
 | Function | Synopsis |
 |----------|----------|
 |[Get-GithubRepositoryPermissions](/github/Get-GithubRepositoryPermissions.psm1) | Check your repository access to GitHub using a PAT |
 |[Get-GithubUserRepositories](/github/Get-GithubUserRepositories.psm1) | Get list of your repositories using a PAT |
 
-### General
-
-[Getting started documentation](/docs/Getting_Started_General.md)
+### General [Getting started documentation](/docs/Getting_Started_General.md)
 
 | Function | Synopsis |
 |----------|----------|
@@ -59,7 +53,7 @@ Run the [Setup Script](/Setup.ps1) as an administrator. This script copies the P
 1. Needs support for Mac | Linux
 * We need to determine which platform we're running on. If Mac/Linux, we'll need to change details which support those platforms. Currently (8/9/2022) we only support the Windows Platform. However, there's nothing to prevent us from supporting any Platform PowerShell is supported. 
 
-2. Update all relevant methods to include colletions
+2. Update all relevant methods to include collections
 * It would be better if we can pass a list into many functions, rather than rely on ForEach-Object commands. 
 
 ## Contributions are welcomed
