@@ -30,6 +30,7 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |----------|----------|
 |[Get-AzureDevOpsProjects](/azureDevOps/Set-AzureDevOpsWebhook.psm1) | Return list of projects in Azure DevOps. |
 |[Set-AzureDevOpsWebhook](/docs/Set-AzureDevOpsWebhook.md) | Create a webhook for an Azure DevOps Project. |
+|[Get-AzureDevOpsSubscriptions](/azureDevOps/Get-AureDevOpsSubscriptions.psm1) | Get a list of subscriptions. |
 
 ### GitHub [Getting started documentation](/docs/Getting_Started_GitHub.md)
 
