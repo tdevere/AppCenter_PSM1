@@ -1,4 +1,6 @@
-<#
+function Get-AppCenterApp
+{
+   <#
  .Synopsis
     Return a specific app with the given app name which belongs to the given owner.
 
@@ -10,14 +12,8 @@
 
  .Example
    # Retrieves list of App Center apps. Requires Environment variable 
-   Get-AppCenterApp -Orgname YourOrgHere -AppName YourAppHere
+   Get-AppCenterApp -ApiUserToken ****** -Orgname YourOrgHere -AppName YourAppHere
 #>
-
-$Global:OrgAppList = New-Object 'Collections.Generic.List[psobject]' #Variable storing Orgs and Apps list
-
-
-function Get-AppCenterApp
-{
     param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    

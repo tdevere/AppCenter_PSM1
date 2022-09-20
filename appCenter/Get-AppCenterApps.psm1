@@ -1,4 +1,7 @@
-<#
+
+function Get-AppCenterApps
+{
+   <#
  .Synopsis
     Return all apps which belongs to the given owner.
 
@@ -12,12 +15,6 @@
    # Retrieves list of App Center apps. Requires Environment variable 
    Get-AppCenterApps -Orgname YourOrgHere -AppName YourAppHere
 #>
-
-$Global:OrgAppList = New-Object 'Collections.Generic.List[psobject]' #Variable storing Orgs and Apps list
-
-
-function Get-AppCenterApps
-{
     param ([string] $ApiUserToken)    
 
     $Uri = "https://api.appcenter.ms/v0.1/apps/"

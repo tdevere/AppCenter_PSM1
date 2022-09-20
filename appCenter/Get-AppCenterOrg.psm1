@@ -1,4 +1,6 @@
-<#
+function Get-AppCenterOrg
+{
+  <#
  .Synopsis
   Returns the details of a single organization
 
@@ -10,19 +12,8 @@
 
  .Example
    # Retrieves App Center Organazation. Requires Environment variable 
-   Get-AppCenterOrg 
-
- .Example
-   # Retrieves App Center Organazation.
-   Get-AppCenterOrg -OrgName InsertYourOrgNameHere
- 
- .Example
-  # Select Organization Names only
-  Get-AppCenterOrg | Select-Object -Property name
+   Get-AppCenterOrg -ApiUserToken YourApiToken -OrgName InsertYourOrgNameHere
 #>
-
-function Get-AppCenterOrg
-{
     param([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    

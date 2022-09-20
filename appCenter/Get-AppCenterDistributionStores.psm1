@@ -1,4 +1,9 @@
-<#
+
+
+
+function Get-AppCenterDistributionStores
+{
+  <#
  .Synopsis
  Get all the store details from Storage store table for a particular application.
 
@@ -10,12 +15,9 @@
 
  .Example
  # Retrieves list of App Center apps. Requires Environment variable 
- Get-AppCenterApp -Orgname YourOrgHere -AppName YourAppHere
+ Get-AppCenterApp -ApiUserToken YourApiToken -Orgname YourOrgHere -AppName YourAppHere
 #>
 
-
-function Get-AppCenterDistributionStores
-{
     param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    
@@ -32,7 +34,23 @@ function Get-AppCenterDistributionStores
 
 function Get-AppCenterDistributionStoresList
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken,
+
+  <#
+ .Synopsis
+ Enumerate a list of all to get all the store details from Storage store table for each.
+
+ .Description
+ Enumerate a list of all to get all the store details from Storage store table for each. https://openapi.appcenter.ms/#/distribute/stores_list
+
+ .Parameter ApiUserToken
+ User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
+
+ .Example
+ # Retrieves list of App Center apps. Requires Environment variable 
+ Get-AppCenterApp -ApiUserToken YourApiToken -OrgAppList OrgAppList
+#>
+
+    param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    
     $OrgAppList)    

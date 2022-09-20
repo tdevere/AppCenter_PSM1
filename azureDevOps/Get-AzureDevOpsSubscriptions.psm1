@@ -15,7 +15,7 @@ function Get-AzureDevOpsSubscriptions
 
         .Example 
 
-        Measure-Command { $AzureSubscriptions = Get-AzureDevOpsSubscriptions -AzureDevOpsPAT $env:AzureDevOpsPAT -AzureDevOpsOrganization $env:AzureDevOpsOrganization }
+        Measure-Command { $AzureSubscriptions = Get-AzureDevOpsSubscriptions -AzureDevOpsPAT **** -AzureDevOpsOrganization **** }
         Preparing Call Get-AzureDevOpsSubscriptions https://dev.azure.com/YOURORGHERE/_apis/hooks/subscriptions?api-version=7.1-preview.1
 
         Days              : 0

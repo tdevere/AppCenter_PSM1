@@ -1,4 +1,6 @@
-<#
+function Add-AppCenterCollaborator 
+{
+    <#
  .Synopsis
   Add new collborator to App Center organization.
 
@@ -22,8 +24,6 @@
    Add-AppCenterCollaborator -$orgName "" -newCollaboratorEmailAddress "some@address.com"
  
 #>
-
-function Add-AppCenterCollaborator {
     Param
     (
         [string] $ApiUserToken,

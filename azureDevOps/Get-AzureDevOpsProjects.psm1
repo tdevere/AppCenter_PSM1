@@ -1,4 +1,6 @@
-<#
+function Get-AzureDevOpsProjects 
+{
+    <#
  .Synopsis
   Return list of projects in Azure DevOps
 
@@ -15,7 +17,7 @@
   Name of your Azure DevOps Organization. Log into https://dev.azure.com to find your organization name
 
   .Example 
-  PS C:\> Get-AzureDevOpsProjects -AzureDevOpsPAT $env:DevOpsPat -AzureDevOpsOrganization ******
+  PS C:\> Get-AzureDevOpsProjects -AzureDevOpsPAT ***** -AzureDevOpsOrganization ******
   
         Requesting Projects from ****** via https://dev.azure.com/*****/_apis/projects?api-version=6.0
 
@@ -56,11 +58,7 @@
         revision       : 228
         visibility     : private
         lastUpdateTime : 2021-04-14T21:17:27.563Z
-#>
-
-
-function Get-AzureDevOpsProjects 
-{    
+#>    
     param 
     (
         [ValidateNotNullOrEmpty()]

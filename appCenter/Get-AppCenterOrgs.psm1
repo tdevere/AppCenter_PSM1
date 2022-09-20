@@ -10,15 +10,8 @@
 
  .Example
    # Retrieves list of App Center Organazations. Requires Environment variable 
-   Get-AppCenterOrgs 
+   Get-AppCenterOrgs -ApiUserToken YourApiToken 
 
- .Example
-   # Retrieves list of App Center Organazations.
-   Get-AppCenterOrgs -ApiUserToken
- 
- .Example
-  # Select Organization Names only
-  Get-AppCenterOrgs | Select-Object -Property name
 #>
 
 function Get-AppCenterOrgs

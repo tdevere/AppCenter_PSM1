@@ -1,4 +1,6 @@
-<#
+function Set-AzureDevOpsWebhook 
+{
+    <#
  .Synopsis
   Created Azure Webhook
 
@@ -14,20 +16,10 @@
   Each subscription has an ID associated with it, as does the tenant to which a subscription belongs. As you perform different tasks, you may need the ID for a subscription or tenant. You can find these values in the Azure portal.
  
   .Parameter AzureDevOpsProjectId
+    Call https://dev.azure.com/<orgname>/_apis/projects to retrieve a list of project Id's
 
   .Parameter AzureDevOpsOrganization
-  #>
-
-#Configure Environment Variables or Override at runtime
-$AzureDevOpsPAT = $env:AzureDevOpsPAT
-$AzureSubscriptionId = $env:AzureSubscriptionId
-$AzureDevOpsOrganization = $env:AzureDevOpsOrganization
-$AzureDevOpsProjectId = $env:AzureDevOpsProjectId
-$AzureDevOpsWebHookReceiverUri = $env:AzureDevOpsWebHookReceiverUri
-
-
-function Set-AzureDevOpsWebhook 
-{
+#>
     #https://docs.microsoft.com/en-us/rest/api/azure/devops/hooks/Subscriptions/Create?view=azure-devops-rest-6.0&tabs=HTTP
     param 
     (

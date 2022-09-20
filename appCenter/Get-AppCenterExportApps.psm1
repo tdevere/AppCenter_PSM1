@@ -1,4 +1,6 @@
-<#
+function Get-AppCenterExportApps
+{
+  <#
  .Synopsis
   Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights)
 
@@ -10,22 +12,10 @@
 
  .Example
    # Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights).
-   Get-AppCenterExportApps 
+   Get-AppCenterExportApps -ApiUserToken YourApiToken 
 
- .Example
-# Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights).
-   Get-AppCenterExportApps
- 
- .Example
-  # Build list of Apps by Org. $orgs can be obtained by storing the results from Get-AppCenterOrganizations
-  Get-AppCenterExportApps
 #>
 
-$Global:OrgAppList = New-Object 'Collections.Generic.List[psobject]' #Variable storing Orgs and Apps list
-
-
-function Get-AppCenterExportApps
-{
     param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]

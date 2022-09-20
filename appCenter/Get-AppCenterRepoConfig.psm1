@@ -1,33 +1,20 @@
-<#
- .Synopsis
-  Returns the repository build configuration status of the app.
-
- .Description
-  Returns the repository build configuration status of the app. https://openapi.appcenter.ms/#/build/repositoryConfigurations_list
-
- .Parameter ApiUserToken
-  User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
-
- .Example
-   # Retrieves list of App Center apps. Requires Environment variable 
-   Get-AppCenterApps -ApiUserToken $env:ApiUserToken -Orgname YourOrgHere -AppName YourAppHere
-
-   .Example
-   # Pass a Json list of owner_name $app_name  Note: Get-AppCenterApps
-   1. $apps = Get-AppCenterApps -ApiUserToken $env:ApiUserToken
-   2. Get-AppCenterRepoConfigByList -ApiUserToken $env:ApiUserToken -ListOfOwnerApps ($apps | Select-Object -Property name, @{Name="owner_name"; expr={$_.owner.name}})
-   
-owner_name      app_name   Uri                                                                          Results
-----------      --------   ---                                                                          -------
-ProjectOne      proj1      https://api.appcenter.ms/v0.1/apps/Examples_/Examples_Proj1/repo_config      {@{type=github; state=active; repo_url=https://github.com/sample/proj1.git; id=...
-ProjectTwo      proj2      https://api.appcenter.ms/v0.1/apps/Examples_/Examples_Proj2/repo_config      {@{type=github; state=active; repo_url=https://github.com/sample/proj2.git; id=...
-
-#>
-
-
 
 function Get-AppCenterRepoConfig
 {
+    <#
+    .Synopsis
+    Returns the repository build configuration status of the app.
+
+    .Description
+    Returns the repository build configuration status of the app. https://openapi.appcenter.ms/#/build/repositoryConfigurations_list
+
+    .Parameter ApiUserToken
+    User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
+
+    .Example
+    Get-AppCenterRepoConfig -ApiUserToken ***** -owner_name **** -app_name ****
+    #>
+
     param (
         [string] $ApiUserToken, 
         [string]$owner_name, 
@@ -43,6 +30,32 @@ function Get-AppCenterRepoConfig
 
 function Get-AppCenterRepoConfigByList
 {
+        
+    <#
+    .Synopsis
+    Returns the repository build configuration status of the app.
+
+    .Description
+    Returns the repository build configuration status of the app. https://openapi.appcenter.ms/#/build/repositoryConfigurations_list
+
+    .Parameter ApiUserToken
+    User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
+
+    .Example
+    # Retrieves list of App Center apps. Requires Environment variable 
+    Get-AppCenterApps -ApiUserToken $env:ApiUserToken -Orgname YourOrgHere -AppName YourAppHere
+
+    .Example
+    # Pass a Json list of owner_name $app_name  Note: Get-AppCenterApps
+    1. $apps = Get-AppCenterApps -ApiUserToken $env:ApiUserToken
+    2. Get-AppCenterRepoConfigByList -ApiUserToken $env:ApiUserToken -ListOfOwnerApps ($apps | Select-Object -Property name, @{Name="owner_name"; expr={$_.owner.name}})
+    
+    owner_name      app_name   Uri                                                                          Results
+    ----------      --------   ---                                                                          -------
+    ProjectOne      proj1      https://api.appcenter.ms/v0.1/apps/Examples_/Examples_Proj1/repo_config      {@{type=github; state=active; repo_url=https://github.com/sample/proj1.git; id=...
+    ProjectTwo      proj2      https://api.appcenter.ms/v0.1/apps/Examples_/Examples_Proj2/repo_config      {@{type=github; state=active; repo_url=https://github.com/sample/proj2.git; id=...
+
+    #>
     param ([string] $ApiUserToken,     
     $ListOfOwnerApps)
     

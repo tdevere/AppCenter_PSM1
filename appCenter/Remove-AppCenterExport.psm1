@@ -1,4 +1,6 @@
-<#
+function Remove-AppCenterExport
+{
+  <#
  .Synopsis
   Removes Export services on App (Blob or Application Insights). Warning: This deletes the resource.
 
@@ -10,12 +12,9 @@
 
  .Example
    # Removes Export services on App (Blob or Application Insights). Warning: This deletes the resource.
-   Remove-AppCenterExport -$OrgName "Org" -$AppName "App" -Export_Config_Id "ID"
+   Remove-AppCenterExport -ApiUserToken **** -$OrgName "Org" -$AppName "App" -Export_Config_Id "ID"
  
 #>
-
-function Remove-AppCenterExport
-{
     param (
     [string] $ApiUserToken,
     [Parameter(Mandatory)]
