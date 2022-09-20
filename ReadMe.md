@@ -23,6 +23,8 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterServiceConnections](/appCenter/Get-AppCenterServiceConnections.psm1) | Returns the list of store connections related to your App Center account. |
 |[Get-AppCenterRepoConfig](/appCenter/Get-AppCenterRepoConfig.psm1) | Returns the repository build configuration status of the app. |
 |[Get-AppCenterRepoConfigByList](/appCenter/Get-AppCenterRepoConfig.psm1) | Pass a list of owners and names, to process bulk repository build configuration status of the app. |
+|[Get-AppCenterDeviceConfigurations.psm1](/appCenter/Get-AppCenterDeviceConfigurations.psm1) | Returns a list of available devices for an application. |
+
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 

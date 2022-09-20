@@ -23,7 +23,7 @@
 
 function Get-AppCenterOrgs
 {
-    param([string] $ApiUserToken = $env:ApiUserToken)
+    param([string] $ApiUserToken)
 
     $Uri = "https://api.appcenter.ms/v0.1/orgs"
     

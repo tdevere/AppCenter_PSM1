@@ -20,7 +20,7 @@
 
 function Get-AppCenterAppsByOrg
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken,
+    param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    
     [string]$OrgName)    

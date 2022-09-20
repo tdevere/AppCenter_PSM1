@@ -26,7 +26,7 @@ $Global:OrgAppList = New-Object 'Collections.Generic.List[psobject]' #Variable s
 
 function Get-AppCenterExportApps
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken,
+    param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]
     [string] $AppName,

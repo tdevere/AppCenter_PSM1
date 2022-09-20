@@ -16,7 +16,7 @@
 
 function Get-AppCenterDistributionStores
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken,
+    param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    
     [string]$OrgName,

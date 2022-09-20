@@ -26,7 +26,7 @@
 function Add-AppCenterCollaborator {
     Param
     (
-        [string] $ApiUserToken = $env:ApiUserToken,
+        [string] $ApiUserToken,
         [string] $orgName, 
         [string] $AppCenterRole = "member", 
         [string] $newCollaboratorEmailAddress

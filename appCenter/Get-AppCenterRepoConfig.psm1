@@ -28,7 +28,11 @@ ProjectTwo      proj2      https://api.appcenter.ms/v0.1/apps/Examples_/Examples
 
 function Get-AppCenterRepoConfig
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken, [string]$owner_name, [string]$app_name)    
+    param (
+        [string] $ApiUserToken, 
+        [string]$owner_name, 
+        [string]$app_name
+        )    
 
     $Uri = "https://api.appcenter.ms/v0.1/apps/$owner_name/$app_name/repo_config"
 

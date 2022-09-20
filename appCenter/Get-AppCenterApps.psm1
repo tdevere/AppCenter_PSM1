@@ -18,7 +18,7 @@ $Global:OrgAppList = New-Object 'Collections.Generic.List[psobject]' #Variable s
 
 function Get-AppCenterApps
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken)    
+    param ([string] $ApiUserToken)    
 
     $Uri = "https://api.appcenter.ms/v0.1/apps/"
 

@@ -32,14 +32,14 @@ function Set-AzureDevOpsWebhook
     param 
     (
         [ValidateNotNullOrEmpty()]
-        [string]$AzureDevOpsPAT = $env:AzureDevOpsPAT,
+        [string]$AzureDevOpsPAT,
         [ValidateNotNullOrEmpty()]
-        [string]$AzureDevOpsOrganization = $env:AzureDevOpsOrganization,
+        [string]$AzureDevOpsOrganization,
         [string]$uri,
         [ValidateNotNullOrEmpty()]
-        [string]$AzureDevOpsWebHookReceiverUri = $env:AzureDevOpsWebHookReceiverUri,
+        [string]$AzureDevOpsWebHookReceiverUri,
         [ValidateNotNullOrEmpty()]
-        [string]$AzureDevOpsProjectId = $env:AzureDevOpsProjectId
+        [string]$AzureDevOpsProjectId
     )
 
     $uri = "https://dev.azure.com/$AzureDevOpsOrganization/_apis/hooks/subscriptions?api-version=6.0"

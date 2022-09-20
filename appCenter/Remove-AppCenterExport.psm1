@@ -17,7 +17,7 @@
 function Remove-AppCenterExport
 {
     param (
-    [string] $ApiUserToken = $env:ApiUserToken,
+    [string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]
     [string] $AppName,

@@ -18,7 +18,7 @@ $Global:OrgAppList = New-Object 'Collections.Generic.List[psobject]' #Variable s
 
 function Get-AppCenterApp
 {
-    param ([string] $ApiUserToken = $env:ApiUserToken,
+    param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]    
     [string]$OrgName,
