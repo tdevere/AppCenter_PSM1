@@ -46,13 +46,11 @@ function Get-AppCenterOrgTesters
 
  .Example
 
-   Get-AppCenterOrgUsers -ApiUserToken $env:ApiUserToken -OrgName "YourOrgNameHere"
+   Get-AppCenterOrgTesters -ApiUserToken $env:ApiUserToken -OrgName "YourOrgNameHere"
 
-   email        : sample@user.com
-   name         : sample@user.com
-   display_name : Sample User
-   joined_at    : 2022-04-22T23:55:14.918Z
-   role         : admin
+   display_name                email              name
+   ------------                -----              ----
+   Sample User               sample@user.com      sample@user.com
 #>
     param ([string] $ApiUserToken,
     [Parameter(Mandatory)]
