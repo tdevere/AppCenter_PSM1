@@ -25,6 +25,8 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterRepoConfigByList](/appCenter/Get-AppCenterRepoConfig.psm1) | Pass a list of owners and names, to process bulk repository build configuration status of the app. |
 |[Get-AppCenterDeviceConfigurations](/appCenter/Get-AppCenterDeviceConfigurations.psm1) | Returns a list of available devices for an application. |
 |[Get-AppCenterAnalyticEvents](/appCenter/Get-AppCenterAnalytics.psm1) | Count of active events in the time range ordered by event. |
+|[Get-AppCenterOrgUsers](/appCenter/Get-AppCenterOrgUsers.psm1) | Returns a list of users that belong to an organization. |
+|[Get-AppCenterOrgUsers](/appCenter/Get-AppCenterOrgUsers.psm1 | Returns a list of testers that belong to an organization. |
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
