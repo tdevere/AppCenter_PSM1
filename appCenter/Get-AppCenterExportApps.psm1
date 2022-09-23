@@ -16,13 +16,15 @@ function Get-AppCenterExportApps
 
 #>
 
-    param ([string] $ApiUserToken,
-    [Parameter(Mandatory)]
-    [ValidateNotNullOrEmpty()]
-    [string] $AppName,
-    [Parameter(Mandatory)]
-    [ValidateNotNullOrEmpty()]    
-    [string]$OrgName)    
+    param (
+      [string] $ApiUserToken,
+      [Parameter(Mandatory)]
+      [ValidateNotNullOrEmpty()]
+      [string] $AppName,
+      [Parameter(Mandatory)]
+      [ValidateNotNullOrEmpty()]    
+      [string]$OrgName
+    )    
 
     $uri = 'https://api.appcenter.ms/v0.1/apps/' + $OrgName + '/' + $AppName + '/export_configurations'
 
