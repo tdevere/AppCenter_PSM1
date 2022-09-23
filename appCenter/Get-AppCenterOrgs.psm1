@@ -1,4 +1,6 @@
-<#
+function Get-AppCenterOrgs
+{
+  <#
  .Synopsis
   Retrieves list of App Center Organazations.
 
@@ -14,8 +16,6 @@
 
 #>
 
-function Get-AppCenterOrgs
-{
     param([string] $ApiUserToken)
 
     $Uri = "https://api.appcenter.ms/v0.1/orgs"
