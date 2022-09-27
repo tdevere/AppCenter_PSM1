@@ -19,7 +19,6 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterExportApps](/appCenter/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights). |
 |[Get-AppCenterOrg](/appCenter/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Get-AppCenterOrgs](/appCenter/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
-|[Get-AppCenterDistributionStores](/appCenter/Get-AppCenterDistributionStores.psm1) | Get Store information for App. |
 |[Get-AppCenterServiceConnections](/appCenter/Get-AppCenterServiceConnections.psm1) | Returns the list of store connections related to your App Center account. |
 |[Get-AppCenterRepoConfig](/appCenter/Get-AppCenterRepoConfig.psm1) | Returns the repository build configuration status of the app. |
 |[Get-AppCenterRepoConfigByList](/appCenter/Get-AppCenterRepoConfig.psm1) | Pass a list of owners and names, to process bulk repository build configuration status of the app. |
@@ -29,7 +28,13 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterOrgTesters](/appCenter/Get-AppCenterOrgUsers.psm1) | Returns a list of testers that belong to an organization. |
 |[Get-AppCenterReleases](/appCenter/Get-AppCenterReleases.psm1) | Return basic information about releases. |
 |[Get-AppCenterReleaseDetails](/appCenter/Get-AppCenterReleases.psm1) | Get a release with id release_id. |
-|[Disable-AppCenterRelease](/appCenter/Get-AppCenterReleases.psm1) | Disable a release with. |
+|[Disable-AppCenterRelease](/appCenter/Get-AppCenterReleases.psm1) | Disable a release. |
+|[Get-AppCenterDistributionGroups](/appCenter/AppCenterDistribution.psm1) | Returns a list of distribution groups in the Org or App specified. |
+|[Get-AppCenterDistributionGroupsDetails](/appCenter/AppCenterDistribution.psm1) | Returns a list of distribution groups in the org specified. |
+|[Get-AppCenterDistributionGroupReleases](/appCenter/AppCenterDistribution.psm1) |Return basic information about distributed releases in a given distribution group. |
+|[Get-AppCenterRecentReleases](/appCenter/AppCenterDistribution.psm1) |Get all the store details from Storage store table for a particular application. |
+|[Get-AppCenterDistributionStores](/appCenter/AppCenterDistribution.psm1) | Get Store information for App. |
+
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
