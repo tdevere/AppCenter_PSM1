@@ -29,6 +29,7 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterOrgTesters](/appCenter/Get-AppCenterOrgUsers.psm1) | Returns a list of testers that belong to an organization. |
 |[Get-AppCenterReleases](/appCenter/Get-AppCenterReleases.psm1) | Return basic information about releases. |
 |[Get-AppCenterReleaseDetails](/appCenter/Get-AppCenterReleases.psm1) | Get a release with id release_id. |
+|[Disable-AppCenterRelease](/appCenter/Get-AppCenterReleases.psm1) | Get a release with id release_id. |
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
@@ -36,7 +37,7 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |----------|----------|
 |[Get-AzureDevOpsProjects](/azureDevOps/Set-AzureDevOpsWebhook.psm1) | Return list of projects in Azure DevOps. |
 |[Set-AzureDevOpsWebhook](/docs/Set-AzureDevOpsWebhook.md) | Create a webhook for an Azure DevOps Project. |
-|[Get-AzureDevOpsSubscriptions](/azureDevOps/Get-AzureDevOpsSubscriptions.psm1) | Get a list of subscriptions. |
+|[Get-AzureDevOpsSubscriptions](/azureDevOps/Get-AzureDevOpsSubscriptions.psm1) | Disable details of a release. |
 
 ### GitHub [Getting started documentation](/docs/Getting_Started_GitHub.md)
 
@@ -65,3 +66,4 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 * It would be better if we can pass a list into many functions, rather than rely on ForEach-Object commands. 
 
 ## Contributions are welcomed
+

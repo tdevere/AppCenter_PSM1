@@ -107,10 +107,10 @@ function Disable-AppCenterRelease
 {
     <#
     .Synopsis
-    Update details of a release.
+    Disable details of a release.
 
     .Description
-    RUpdate details of a release. Open API https://openapi.appcenter.ms/#/distribute/releases_updateDetails
+    Disable details of a release. Open API https://openapi.appcenter.ms/#/distribute/releases_updateDetails
 
     .Parameter ApiUserToken
     User API tokens work across all organizations and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
@@ -143,8 +143,28 @@ function Disable-AppCenterRelease
     package_hashes        : {bcef3fd816792a1f5e5db6ff97ee0a83f6b0c2653e09bd2cafa1a99fc4d96f67}
     destinations          : {}
 
-
     Disable-AppCenterRelease -ApiUserToken ***** -OrgName ***** -AppName ***** -Release_Id 2010
+    
+    enabled               : False    
+
+    .Example
+    
+    #datetime to pick from the last of releases to disable   
+    [DateTime]$DisableReleasesOnAndBefore = (Get-Date).AddDays(-180) 
+
+    Get a list of old releases
+    $old_relesaes = $releases | ForEach-Object 
+    {
+        if ($_.enabled -eq $true) 
+        {
+            [DateTime]$uploadedDateTime = $_.uploaded_at
+        
+            if ((Get-Date $uploadedDateTime) -le (Get-Date $DisableReleasesOnAndBefore)) 
+            {
+                $_ #Or Try to Disable the relase? Disable-AppCenterRelease
+            }
+        }
+    }
 
     #>
     param ([string] $ApiUserToken,
