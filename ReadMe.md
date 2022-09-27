@@ -29,7 +29,7 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterOrgTesters](/appCenter/Get-AppCenterOrgUsers.psm1) | Returns a list of testers that belong to an organization. |
 |[Get-AppCenterReleases](/appCenter/Get-AppCenterReleases.psm1) | Return basic information about releases. |
 |[Get-AppCenterReleaseDetails](/appCenter/Get-AppCenterReleases.psm1) | Get a release with id release_id. |
-|[Disable-AppCenterRelease](/appCenter/Get-AppCenterReleases.psm1) | Get a release with id release_id. |
+|[Disable-AppCenterRelease](/appCenter/Get-AppCenterReleases.psm1) | Disable a release with. |
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
