@@ -13,6 +13,8 @@
 *.ps1
 ScratchPad.ps1
 PSM1-Registration.psm1
+BranchUpdate.log
+PSM1_Template.psm1
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
