@@ -103,7 +103,7 @@ function Get-AppCenterReleases
 
 }
 
-function Disable-AppCenterRelease
+function Update-AppCenterReleaseEnabledStatus
 {
     <#
     .Synopsis
@@ -143,7 +143,7 @@ function Disable-AppCenterRelease
     package_hashes        : {bcef3fd816792a1f5e5db6ff97ee0a83f6b0c2653e09bd2cafa1a99fc4d96f67}
     destinations          : {}
 
-    Disable-AppCenterRelease -ApiUserToken ***** -OrgName ***** -AppName ***** -Release_Id 2010
+    Update-AppCenterReleaseEnabledStatus -ApiUserToken ***** -OrgName ***** -AppName ***** -Release_Id 2010
     
     enabled               : False    
 
@@ -173,11 +173,24 @@ function Disable-AppCenterRelease
     [string]$OrgName,
     [ValidateNotNullOrEmpty()]    
     [string]$AppName,
+    [ValidateNotNullOrEmpty()] 
     $Release_Id,
-    $Published_Only = $false)   
+    $Published_Only = $false,
+    [ValidateNotNullOrEmpty()]
+    [bool]$enable)   
     
-    $disableReleaseJson = '"{\"enabled\": false}"' 
+    if($enable)
+    {
+    
+        $disableReleaseJson = '"{\"enabled\": true}"' 
 
+    }
+    else
+    {
+        $disableReleaseJson = '"{\"enabled\": false}"' 
+
+    }
+    
     $Uri = 'https://api.appcenter.ms/v0.1/apps/' + $OrgName + '/' + $AppName + '/releases/' + $Release_Id   
     $results = curl.exe -X PUT $Uri -H "X-API-Token: $ApiUserToken" -H "Content-Type: application/json" -H "accept: application/json" -d $disableReleaseJson | ConvertFrom-Json 
 
@@ -188,4 +201,4 @@ function Disable-AppCenterRelease
 
 Export-ModuleMember -Function Get-AppCenterReleases 
 Export-ModuleMember -Function Get-AppCenterReleaseDetails 
-Export-ModuleMember -Function Disable-AppCenterRelease
+Export-ModuleMember -Function Update-AppCenterReleaseEnabledStatus

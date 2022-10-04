@@ -11,7 +11,7 @@
 ### Get Status of All Export Services
 1. Populate a list of Apps with one ore more export services enabled
 
-    ``` $exportApps = $apps | ForEach-Object { Get-AppCenterExportApps -OrgName $_.owner.name -AppName $_.name } ```
+    ``` $exportApps = $apps | ForEach-Object { Get-AppCenterExportConfiguration -OrgName $_.owner.name -AppName $_.name } ```
 
 2. Show a complete list of Export Details
 

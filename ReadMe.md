@@ -16,7 +16,9 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterApps](/appCenter/Get-AppCenterApps.psm1) | Return all apps which belongs to the given owner. |
 |[Get-AppCenterAppsByOrg](/appCenter/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps for a specifc Organization. |
 |[Get-AppCenterAppsByOrgList](/appCenter/Get-AppCenterAppsByOrg.psm1)| Same as [Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) however this takes a list of Orgs and returns a list.
-|[Get-AppCenterExportApps](/appCenter/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights). |
+|[Get-AppCenterExportConfiguration](/appCenter/AppCenterExportConfiguration.psm1) | Get Export Configuration |
+|[Remove-AppCenterExportConfiguration](/appCenter/AppCenterExportConfiguration.psm1) | Delete Export Configuration |
+|[Update-AppCenterBlobStorageExportConfiguration](/appCenter/AppCenterExportConfiguration.psm1) | Updates BlobStorage Export Configuration. By default, enables crashes while errors, attachments are not enabled. |
 |[Get-AppCenterOrg](/appCenter/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Get-AppCenterOrgs](/appCenter/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
 |[Get-AppCenterServiceConnections](/appCenter/Get-AppCenterServiceConnections.psm1) | Returns the list of store connections related to your App Center account. |
