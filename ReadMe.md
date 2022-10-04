@@ -16,10 +16,11 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterApps](/appCenter/Get-AppCenterApps.psm1) | Return all apps which belongs to the given owner. |
 |[Get-AppCenterAppsByOrg](/appCenter/Get-AppCenterAppsByOrg.psm1) | Retrieves list of App Center Apps for a specifc Organization. |
 |[Get-AppCenterAppsByOrgList](/appCenter/Get-AppCenterAppsByOrg.psm1)| Same as [Get-AppCenterAppsByOrg](/Get-AppCenterAppsByOrg.psm1) however this takes a list of Orgs and returns a list.
-|[Get-AppCenterExportApps](/appCenter/Get-AppCenterExportApps.psm1) | Retrieves list of App Center Apps that have Export enabled (Blob or Application Insights). |
+|[Get-AppCenterExportConfiguration](/appCenter/AppCenterExportConfiguration.psm1) | Get Export Configuration |
+|[Remove-AppCenterExportConfiguration](/appCenter/AppCenterExportConfiguration.psm1) | Delete Export Configuration |
+|[Update-AppCenterBlobStorageExportConfiguration](/appCenter/AppCenterExportConfiguration.psm1) | Updates BlobStorage Export Configuration. By default, enables crashes while errors, attachments are not enabled. |
 |[Get-AppCenterOrg](/appCenter/Get-AppCenterOrg.psm1) | Returns the details of a single organization. |
 |[Get-AppCenterOrgs](/appCenter/Get-AppCenterOrgs.psm1) | Retrieves list of App Center Organazations. |
-|[Get-AppCenterDistributionStores](/appCenter/Get-AppCenterDistributionStores.psm1) | Get Store information for App. |
 |[Get-AppCenterServiceConnections](/appCenter/Get-AppCenterServiceConnections.psm1) | Returns the list of store connections related to your App Center account. |
 |[Get-AppCenterRepoConfig](/appCenter/Get-AppCenterRepoConfig.psm1) | Returns the repository build configuration status of the app. |
 |[Get-AppCenterRepoConfigByList](/appCenter/Get-AppCenterRepoConfig.psm1) | Pass a list of owners and names, to process bulk repository build configuration status of the app. |
@@ -29,6 +30,14 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterOrgTesters](/appCenter/Get-AppCenterOrgUsers.psm1) | Returns a list of testers that belong to an organization. |
 |[Get-AppCenterReleases](/appCenter/Get-AppCenterReleases.psm1) | Return basic information about releases. |
 |[Get-AppCenterReleaseDetails](/appCenter/Get-AppCenterReleases.psm1) | Get a release with id release_id. |
+|[Disable-AppCenterRelease](/appCenter/Get-AppCenterReleases.psm1) | Disable a release. |
+|[Get-AppCenterDistributionGroups](/appCenter/AppCenterDistribution.psm1) | Returns a list of distribution groups in the Org or App specified. |
+|[Get-AppCenterDistributionGroupsDetails](/appCenter/AppCenterDistribution.psm1) | Returns a list of distribution groups in the org specified. |
+|[Get-AppCenterDistributionGroupReleases](/appCenter/AppCenterDistribution.psm1) |Return basic information about distributed releases in a given distribution group. |
+|[Get-AppCenterRecentReleases](/appCenter/AppCenterDistribution.psm1) |Get all the store details from Storage store table for a particular application. |
+|[Get-AppCenterDistributionStores](/appCenter/AppCenterDistribution.psm1) | Get Store information for App. |
+|[Disable-AppCenterSymbol](/appCenter/AppCenterSymbols.psm1) | Marks a symbol by id (uuid) as ignored. |
+|[Get-AppCenterMissingSymbolCrashGroup](/appCenter/AppCenterSymbols.psm1) | Gets missing symbol crash group by its id. |
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
@@ -36,7 +45,7 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |----------|----------|
 |[Get-AzureDevOpsProjects](/azureDevOps/Set-AzureDevOpsWebhook.psm1) | Return list of projects in Azure DevOps. |
 |[Set-AzureDevOpsWebhook](/docs/Set-AzureDevOpsWebhook.md) | Create a webhook for an Azure DevOps Project. |
-|[Get-AzureDevOpsSubscriptions](/azureDevOps/Get-AzureDevOpsSubscriptions.psm1) | Get a list of subscriptions. |
+|[Get-AzureDevOpsSubscriptions](/azureDevOps/Get-AzureDevOpsSubscriptions.psm1) | Disable details of a release. |
 
 ### GitHub [Getting started documentation](/docs/Getting_Started_GitHub.md)
 
@@ -65,3 +74,4 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 * It would be better if we can pass a list into many functions, rather than rely on ForEach-Object commands. 
 
 ## Contributions are welcomed
+
