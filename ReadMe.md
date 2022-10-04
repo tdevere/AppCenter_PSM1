@@ -36,7 +36,8 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 |[Get-AppCenterDistributionGroupReleases](/appCenter/AppCenterDistribution.psm1) |Return basic information about distributed releases in a given distribution group. |
 |[Get-AppCenterRecentReleases](/appCenter/AppCenterDistribution.psm1) |Get all the store details from Storage store table for a particular application. |
 |[Get-AppCenterDistributionStores](/appCenter/AppCenterDistribution.psm1) | Get Store information for App. |
-
+|[Disable-AppCenterSymbol](/appCenter/AppCenterSymbols.psm1) | Marks a symbol by id (uuid) as ignored. |
+|[Get-AppCenterMissingSymbolCrashGroup](/appCenter/AppCenterSymbols.psm1) | Gets missing symbol crash group by its id. |
 
 ### Azure [Getting started documentation](/docs/Getting_Started_AzureDevOps.md)
 
