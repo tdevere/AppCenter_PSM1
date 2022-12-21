@@ -6,6 +6,7 @@ function NameOfFunctionHere
     .Description
     
     .Parameter ApiUserToken
+    User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
     
     .Example
 

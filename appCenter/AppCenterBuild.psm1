@@ -165,6 +165,88 @@ function Get-AppCenterServiceConnections
     return $results
 }
 
+function Get-AppCenterBranchConfiguration
+{
+    <#
+    .Synopsis
+    Returns the repository build configuration of the app.
+
+    .Description
+    Returns the repository build configuration of the app.
+
+    .Parameter ApiUserToken
+    User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
+
+    .Example
+    Get-AppCenterRepoConfig -ApiUserToken ***** -owner_name **** -app_name ****
+    #>
+
+    param 
+    (
+        [Parameter(Mandatory)]
+        [String]
+        $Branch,
+        [Parameter(Mandatory)]
+        [String]
+        $Owner,
+        [Parameter(Mandatory)]
+        [String]
+        $Application,
+        [Parameter(Mandatory)]
+        [String]
+        $ApiUserToken        
+    )    
+
+    $Uri = "https://api.appcenter.ms/v0.1/apps/$Owner/$Application/branches/$Branch/config"
+
+    $results = curl.exe -X GET $Uri -H "Content-Type: application/json" -H "accept: application/json" -H "X-API-Token: $ApiUserToken" | ConvertFrom-Json
+
+    return $results
+}
+
+function Set-AppCenterBranchConfiguration
+{
+    <#
+    .Synopsis
+    Set the repository build configuration of the app.
+
+    .Description
+    Set the repository build configuration of the app. https://openapi.appcenter.ms/#/build/repositoryConfigurations_list
+
+    .Parameter ApiUserToken
+    User API tokens work across all apps and apps that you're associated with. https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-user-api-token
+
+    .Example
+    Get-AppCenterRepoConfig -ApiUserToken ***** -owner_name **** -app_name ****
+    #>
+
+    param
+    (
+        [Parameter(Mandatory)]
+        [String]
+        $Branch,
+        [Parameter(Mandatory)]
+        [String]
+        $Owner,
+        [Parameter(Mandatory)]
+        [String]
+        $Application,
+        [Parameter(Mandatory)]
+        [String]
+        $ApiUserToken,
+        [Parameter(Mandatory)]
+        $BranchConfiguration
+    )    
+
+    $Uri = "https://api.appcenter.ms/v0.1/apps/$Owner/$Application/branches/$Branch/config"
+
+    $results = curl.exe -X GET $Uri -H "Content-Type: application/json" -H "accept: application/json" -H "X-API-Token: $ApiUserToken" | ConvertFrom-Json
+
+    return $results
+}
+
+Export-ModuleMember -Function Set-AppCenterBranchConfiguration
+Export-ModuleMember -Function Get-AppCenterBranchConfiguration
 Export-ModuleMember -Function Get-AppCenterRepoConfig
 Export-ModuleMember -Function Get-AppCenterRepoConfigByList 
 Export-ModuleMember -Function Get-AppCenterServiceConnections

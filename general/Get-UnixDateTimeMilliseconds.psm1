@@ -1,4 +1,7 @@
-<#
+
+function Get-UnixDateTimeMilliseconds
+{
+  <#
  .Synopsis
   Return [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
 
@@ -6,9 +9,6 @@
   Return [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
 
 #>
-
-function Get-UnixDateTimeMilliseconds
-{
     return [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
 }
 
