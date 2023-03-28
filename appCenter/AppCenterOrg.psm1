@@ -192,7 +192,7 @@ function Add-AppCenterCollaborator
     $finalJson = ConvertTo-Json -InputObject $converedtJson
     
 
-    $results = Invoke-WebRequest -Uri $uri -Method Post -Body  $finalJson -Headers  $headers -ContentType "application/json" | ConvertFrom-Json 
+    $results = Invoke-WebRequest -Uri $uri -Method Post -Body $finalJson -Headers  $headers -ContentType "application/json" | ConvertFrom-Json 
     
     return $results;
 
