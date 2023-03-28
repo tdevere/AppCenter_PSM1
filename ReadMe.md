@@ -66,16 +66,16 @@ Run the [Setup Script](/Setup.ps1) to copy the PowerShell modules to the modules
 
 | Function | Synopsis |
 |----------|----------|
-|[Get-AzureDevOpsProjects](/azureDevOps/Set-AzureDevOpsWebhook.psm1) | Return list of projects in Azure DevOps. |
+|[Get-AzureDevOpsProjects](/azureDevOps/AzureDevOps.psm1) | Return list of projects in Azure DevOps. |
 |[Set-AzureDevOpsWebhook](/docs/Set-AzureDevOpsWebhook.md) | Create a webhook for an Azure DevOps Project. |
-|[Get-AzureDevOpsSubscriptions](/azureDevOps/Get-AzureDevOpsSubscriptions.psm1) | Get a list of subscriptions. |
+|[Get-AzureDevOpsSubscriptions](/azureDevOps/AzureDevOps.psm1) | Get a list of subscriptions. |
 
 ### GitHub [Getting started documentation](/docs/Getting_Started_GitHub.md)
 
 | Function | Synopsis |
 |----------|----------|
-|[Get-GithubRepositoryPermissions](/github/Get-GithubRepositoryPermissions.psm1) | Check your repository access to GitHub using a PAT |
-|[Get-GithubUserRepositories](/github/Get-GithubUserRepositories.psm1) | Get list of your repositories using a PAT |
+|[Get-GithubRepositoryPermissions](/github/GitHub.psm1) | Check your repository access to GitHub using a PAT |
+|[Get-GithubUserRepositories](/github/GitHub.psm1) | Get list of your repositories using a PAT |
 
 ### General [Getting started documentation](/docs/Getting_Started_General.md)
 
